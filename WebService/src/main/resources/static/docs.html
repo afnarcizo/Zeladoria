@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API de Zeladoria Urbana — Documentação Interativa (Scalar)</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+        .zeladoria-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 24px;
+            background: linear-gradient(90deg, #0f172a 0%, #0f766e 100%);
+            color: #f8fafc;
+            font-size: 13px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        .zeladoria-header .brand {
+            font-weight: 600;
+            letter-spacing: 0.01em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .zeladoria-header .badge {
+            background: rgba(255, 255, 255, 0.16);
+            padding: 3px 10px;
+            border-radius: 999px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+        .zeladoria-header .nav-links a {
+            color: #ccfbf1;
+            text-decoration: none;
+            margin-left: 16px;
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            transition: background 0.15s ease;
+        }
+        .zeladoria-header .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.22);
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header class="zeladoria-header">
+        <div class="brand">
+            <span>🏛️ Sistema de Zeladoria Urbana — API RESTful</span>
+            <span class="badge">Java 21 • Spring Boot 3.3 • JPA • MySQL</span>
+        </div>
+        <nav class="nav-links">
+            <a href="/swagger-ui.html">Abrir no Swagger UI (Estilizado CSS)</a>
+            <a href="/v3/api-docs" target="_blank">JSON OpenAPI 3.0</a>
+        </nav>
+    </header>
+
+    <!-- Scalar API Reference acoplado dinamicamente ao endpoint /v3/api-docs do Springdoc -->
+    <script
+        id="api-reference"
+        data-url="/v3/api-docs"
+        data-configuration='{"theme":"kepler","layout":"modern","showSidebar":true,"hideModels":false,"defaultOpenAllTags":true}'>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+/* ==========================================================================
+   Tema Moderno para Swagger UI 5 - Sistema de Zeladoria Urbana
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+    --zeladoria-primary: #0f766e;
+    --zeladoria-primary-dark: #115e59;
+    --zeladoria-bg: #f8fafc;
+    --zeladoria-surface: #ffffff;
+    --zeladoria-border: #e2e8f0;
+    --zeladoria-text: #0f172a;
+    --zeladoria-muted: #475569;
+    --zeladoria-radius: 10px;
+    --zeladoria-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+}
+
+body {
+    background-color: var(--zeladoria-bg) !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    color: var(--zeladoria-text) !important;
+    margin: 0;
+}
+
+/* Barra Superior (Topbar) */
+.swagger-ui .topbar {
+    background: linear-gradient(135deg, #0f172a 0%, #0f766e 100%) !important;
+    padding: 14px 24px !important;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.swagger-ui .topbar .download-url-wrapper .select-label select {
+    border-radius: 8px !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    font-family: 'Inter', sans-serif !important;
+    padding: 6px 12px !important;
+}
+
+/* Cabeçalho de Informações da API */
+.swagger-ui .information-container {
+    background: var(--zeladoria-surface);
+    border-radius: 14px;
+    padding: 24px 32px !important;
+    margin: 28px auto 20px auto !important;
+    max-width: 1420px;
+    box-shadow: var(--zeladoria-shadow);
+    border: 1px solid var(--zeladoria-border);
+}
+
+.swagger-ui .info {
+    margin: 0 !important;
+}
+
+.swagger-ui .info .title {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 30px !important;
+    color: var(--zeladoria-text) !important;
+    letter-spacing: -0.02em;
+}
+
+.swagger-ui .info .title small.version-stamp {
+    background-color: var(--zeladoria-primary) !important;
+    border-radius: 999px !important;
+    padding: 4px 12px !important;
+    font-weight: 600 !important;
+}
+
+.swagger-ui .info p,
+.swagger-ui .info li {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    color: var(--zeladoria-muted) !important;
+}
+
+/* Barra de Servidores / Autorização */
+.swagger-ui .scheme-container {
+    background: var(--zeladoria-surface) !important;
+    border-radius: 12px;
+    max-width: 1420px;
+    margin: 0 auto 24px auto !important;
+    padding: 16px 28px !important;
+    box-shadow: var(--zeladoria-shadow) !important;
+    border: 1px solid var(--zeladoria-border);
+}
+
+/* Seções de Tags (Grupos de Endpoints) */
+.swagger-ui .opblock-tag-section {
+    background: var(--zeladoria-surface);
+    border-radius: 12px;
+    padding: 8px 20px 16px 20px;
+    margin-bottom: 20px;
+    box-shadow: var(--zeladoria-shadow);
+    border: 1px solid var(--zeladoria-border);
+}
+
+.swagger-ui .opblock-tag {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    color: var(--zeladoria-text) !important;
+    border-bottom: 1px solid var(--zeladoria-border) !important;
+    padding: 14px 4px !important;
+    margin-bottom: 14px !important;
+}
+
+/* Blocos de Operação (GET, POST, PUT, PATCH, DELETE) */
+.swagger-ui .opblock {
+    border-radius: var(--zeladoria-radius) !important;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04) !important;
+    margin-bottom: 12px !important;
+    overflow: hidden;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.swagger-ui .opblock:hover {
+    box-shadow: 0 6px 14px rgba(15, 23, 42, 0.07) !important;
+}
+
+.swagger-ui .opblock .opblock-summary-method {
+    border-radius: 6px !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    min-width: 78px !important;
+    text-align: center;
+    padding: 6px 12px !important;
+}
+
+.swagger-ui .opblock .opblock-summary-path {
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 14.5px !important;
+    font-weight: 500 !important;
+    color: var(--zeladoria-text) !important;
+}
+
+.swagger-ui .opblock .opblock-summary-description {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 13.5px !important;
+    color: var(--zeladoria-muted) !important;
+}
+
+/* Paleta refinada para verbos HTTP */
+.swagger-ui .opblock.opblock-get {
+    border-color: #bae6fd !important;
+    background: #f0f9ff !important;
+}
+.swagger-ui .opblock.opblock-get .opblock-summary-method {
+    background: #0284c7 !important;
+}
+
+.swagger-ui .opblock.opblock-post {
+    border-color: #a7f3d0 !important;
+    background: #ecfdf5 !important;
+}
+.swagger-ui .opblock.opblock-post .opblock-summary-method {
+    background: #059669 !important;
+}
+
+.swagger-ui .opblock.opblock-put {
+    border-color: #fde68a !important;
+    background: #fffbeb !important;
+}
+.swagger-ui .opblock.opblock-put .opblock-summary-method {
+    background: #d97706 !important;
+}
+
+.swagger-ui .opblock.opblock-patch {
+    border-color: #ddd6fe !important;
+    background: #f5f3ff !important;
+}
+.swagger-ui .opblock.opblock-patch .opblock-summary-method {
+    background: #7c3aed !important;
+}
+
+.swagger-ui .opblock.opblock-delete {
+    border-color: #fecaca !important;
+    background: #fef2f2 !important;
+}
+.swagger-ui .opblock.opblock-delete .opblock-summary-method {
+    background: #dc2626 !important;
+}
+
+/* Botões (Try it out / Execute) */
+.swagger-ui .btn {
+    border-radius: 8px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+    transition: all 0.15s ease !important;
+}
+
+.swagger-ui .btn.execute {
+    background-color: var(--zeladoria-primary) !important;
+    border-color: var(--zeladoria-primary) !important;
+    color: #ffffff !important;
+    padding: 8px 20px !important;
+}
+
+.swagger-ui .btn.execute:hover {
+    background-color: var(--zeladoria-primary-dark) !important;
+}
+
+/* Blocos de Código JSON e Schemas */
+.swagger-ui pre,
+.swagger-ui code,
+.swagger-ui textarea {
+    font-family: 'JetBrains Mono', monospace !important;
+    border-radius: 8px !important;
+}
+
+.swagger-ui section.models {
+    background: var(--zeladoria-surface) !important;
+    border-radius: 12px !important;
+    border: 1px solid var(--zeladoria-border) !important;
+    box-shadow: var(--zeladoria-shadow) !important;
+    padding: 12px 20px !important;
+}

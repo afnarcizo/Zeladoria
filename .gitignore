@@ -1,0 +1,82 @@
+# ==========================================================================
+# Pastas de Build e Documentacao Gerada
+# ==========================================================================
+target/
+docs/
+build/
+out/
+bin/
+
+# ==========================================================================
+# Arquivos Compactados e Binarios
+# ==========================================================================
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+*.bz2
+*.xz
+*.jar
+*.war
+*.ear
+*.nar
+!/.mvn/wrapper/*.jar
+
+# ==========================================================================
+# Java / Maven / Logs
+# ==========================================================================
+*.class
+*.log
+hs_err_pid*
+replay_pid*
+dependency-reduced-pom.xml
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# ==========================================================================
+# IDEs e Editores (IntelliJ, Eclipse, VS Code, NetBeans)
+# ==========================================================================
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+.settings/
+.project
+.classpath
+.factorypath
+.springBeans
+.sts4-cache/
+nbproject/
+/nbbuild/
+/nbdist/
+/.nb-gradle/
+
+# ==========================================================================
+# Python / Scripts Auxiliares
+# ==========================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# ==========================================================================
+# Sistema Operacional e Arquivos Temporarios / Sensíveis
+# ==========================================================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+*.swp
+*.swo
+*.tmp
+*.bak
+.env
+.env.*
